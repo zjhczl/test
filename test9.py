@@ -39,8 +39,8 @@ class RosbagHandler(FileSystemEventHandler):
 
 
 # Set up the source and target directories
-source_directory = '/path/to/source/directory'
-target_directory = '/path/to/target/directory'
+source_directory = '/home/zj/rosbag'
+target_directory = '/home/zj/rosbag-zip'
 
 # Create the target directory if it doesn't exist
 if not os.path.exists(target_directory):
