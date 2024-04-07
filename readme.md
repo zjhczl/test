@@ -4,6 +4,7 @@
 - [test2.py](#test2.py)
 - [test3.py](#test3.py)
 - [test4.py](#test4.py)
+- [test5.py](#test5.py)
 - [test8.py](#test8.py)
 - [test9.py](#test9.py)
 
@@ -22,6 +23,10 @@
 ## test4.py
 
 功能：椭球高转海拔高
+
+## test5.py
+
+功能：压缩文件
 
 ## test8.py
 
