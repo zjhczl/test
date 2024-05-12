@@ -2,6 +2,9 @@
 
 - [test.py](#test.py)
 - [test10.py](#test10.py)
+- [test11.py](#test11.py)
+- [test12.py](#test12.py)
+- [test13.py](#test13.py)
 - [test2.py](#test2.py)
 - [test3.py](#test3.py)
 - [test4.py](#test4.py)
@@ -16,6 +19,18 @@
 ## test10.py
 
 功能：websocket
+
+## test11.py
+
+功能：socket转websocket
+
+## test12.py
+
+功能：gps授时
+
+## test13.py
+
+功能：无人机远程监控
 
 ## test2.py
 
