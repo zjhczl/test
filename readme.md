@@ -5,6 +5,7 @@
 - [test11.py](#test11.py)
 - [test12.py](#test12.py)
 - [test13.py](#test13.py)
+- [test14.py](#test14.py)
 - [test2.py](#test2.py)
 - [test3.py](#test3.py)
 - [test4.py](#test4.py)
@@ -31,6 +32,10 @@
 ## test13.py
 
 功能：无人机远程监控
+
+## test14.py
+
+功能：ubuntu串口连接
 
 ## test2.py
 
