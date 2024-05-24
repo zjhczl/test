@@ -8,12 +8,15 @@
 - [test14.py](#test14.py)
 - [test15.py](#test15.py)
 - [test16.py](#test16.py)
+- [test17.py](#test17.py)
+- [test18.py](#test18.py)
 - [test2.py](#test2.py)
 - [test3.py](#test3.py)
 - [test4.py](#test4.py)
 - [test5.py](#test5.py)
 - [test8.py](#test8.py)
 - [test9.py](#test9.py)
+- [tets19.py](#tets19.py)
 
 ## test.py
 
@@ -47,6 +50,14 @@
 
 功能：一个socket流转多个
 
+## test17.py
+
+功能：ntrip caster改进版本
+
+## test18.py
+
+功能：绘制折线图z
+
 ## test2.py
 
 功能：略
@@ -70,4 +81,8 @@
 ## test9.py
 
 功能：监控文件变化
+
+## tets19.py
+
+功能：绘制折线图x
 
