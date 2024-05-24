@@ -1,8 +1,9 @@
 # ubuntu串口连接
 
 import serial
-import time
 import threading
+import time
+import datetime
 
 
 def printMsg(ser):
@@ -30,6 +31,12 @@ while True:
     # 发送指令
     print(cmd)
     ser.write(cmd + b' \r\n')
+
+    # # 发送指令
+    # current_time = str(datetime.datetime.now())+"-"
+    # ser.write(current_time.encode('utf-8') +
+    #           b'dasdhasjkdhaskljdc;aLvj"SJopssssafj okljlkjlksjdasdjsddfsdfsd ;kzbasjdhaskjdhaskljdnlkadjlkasjkal \r\n')
+    # time.sleep(1)
 
 
 # 等待线程结束
