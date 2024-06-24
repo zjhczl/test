@@ -11,6 +11,8 @@
 - [test17.py](#test17.py)
 - [test18.py](#test18.py)
 - [test2.py](#test2.py)
+- [test20.py](#test20.py)
+- [test21.py](#test21.py)
 - [test3.py](#test3.py)
 - [test4.py](#test4.py)
 - [test5.py](#test5.py)
@@ -61,6 +63,14 @@
 ## test2.py
 
 功能：略
+
+## test20.py
+
+功能：拆解视频为图片
+
+## test21.py
+
+功能：数据流压缩
 
 ## test3.py
 
