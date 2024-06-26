@@ -5,6 +5,19 @@ import threading
 import base64
 import math
 import time
+import brotli
+
+
+def compress_data(data):
+    # 使用Brotli算法压缩数据
+    compressed_data = brotli.compress(data)
+    return compressed_data
+
+
+def decompress_data(compressed_data):
+    # 使用Brotli算法解压缩数据
+    decompressed_data = brotli.decompress(compressed_data)
+    return decompressed_data
 
 
 def getGGA(lat, lon):
@@ -48,16 +61,25 @@ def connectCors(corsHost, corsPort, mountPoint, username, password, lat=35.10397
     client_socket.send(gga.encode('utf-8'))
 
     print("连接串口")
-    ser = serial.Serial('/dev/ttyUSB0', 115200)
-
+    # ser = serial.Serial('/dev/ttyUSB0', 115200)
+    ser = serial.Serial("/dev/tty.usbserial-210", 115200)
     # 接收并打印流数据
     while True:
         data = client_socket.recv(1024)
 
         if not data:
             break
-        print(data)
-        ser.write(data+b"\n")
+        # print("start")
+        # print(data)
+        # print("------------")
+        compressed_data = compress_data(data)
+        print(compressed_data)
+        # print("------------")
+
+        # print(decompress_data(compressed_data))
+        # print("------------")
+        # print("end")
+        ser.write(compressed_data+b"\n")
         gga = getGGA(lat, lon)
         client_socket.send(gga.encode('utf-8'))
 
@@ -65,11 +87,11 @@ def connectCors(corsHost, corsPort, mountPoint, username, password, lat=35.10397
     client_socket.close()
 
 
-corsHost = "120.253.226.97"
-corsPort = 8002
+corsHost = "10.58.32.10"
+corsPort = 8001
 mountPoint = "RTCM33_GRCEJ"
-username = "cedr21607"
-password = "fyx59799"
+username = "kuangka"
+password = "123"
 lat = 35.103973106
 lon = 117.409903771
 connectCors(corsHost, corsPort, mountPoint, username,
