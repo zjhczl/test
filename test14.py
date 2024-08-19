@@ -13,8 +13,9 @@ def printMsg(ser):
 
 
 print("连接串口")
-ser = serial.Serial('/dev/ttyUSB0', 115200)
+# ser = serial.Serial('/dev/ttyUSB0', 115200)
 
+ser = serial.Serial('/dev/tty.usbserial-210', 115200)
 
 my_thread = threading.Thread(target=printMsg, args=(ser,))
 
