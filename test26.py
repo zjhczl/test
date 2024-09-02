@@ -41,6 +41,8 @@ def csv_to_geojson(csv_file, geojson_file):
 
 
 # Usage example
-csv_file = 'input.csv'  # Replace with your input CSV file
-geojson_file = 'output.geojson'  # Replace with your output GeoJSON file
+# Replace with your input CSV file
+csv_file = '/users/zj/cx/test/driving_lane2.csv'
+# Replace with your output GeoJSON file
+geojson_file = '/users/zj/ARC/geojson/lane2.geojson'
 csv_to_geojson(csv_file, geojson_file)
