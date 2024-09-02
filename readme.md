@@ -17,6 +17,7 @@
 - [test23.py](#test23.py)
 - [test24.py](#test24.py)
 - [test25.py](#test25.py)
+- [test26.py](#test26.py)
 - [test3.py](#test3.py)
 - [test4.py](#test4.py)
 - [test5.py](#test5.py)
@@ -91,6 +92,10 @@
 ## test25.py
 
 功能：webhook改进版本
+
+## test26.py
+
+功能：csv转geojson
 
 ## test3.py
 
